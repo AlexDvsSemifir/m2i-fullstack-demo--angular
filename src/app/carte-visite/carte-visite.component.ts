@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./carte-visite.component.scss'],
 })
 export class CarteVisiteComponent implements OnInit {
-  user: object = {
+  user: any = {
     id: 1,
     name: 'Leanne Graham',
     username: 'Bret',
