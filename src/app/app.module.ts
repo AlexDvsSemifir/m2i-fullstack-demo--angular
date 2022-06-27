@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { MyFirstComponentComponent } from './my-first-component/my-first-component.component';
 import { UserComponent } from './user/user.component';
 import { CarteVisiteComponent } from './carte-visite/carte-visite.component';
+import { AlertButtonComponent } from './alert-button/alert-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyFirstComponentComponent,
     UserComponent,
-    CarteVisiteComponent
+    CarteVisiteComponent,
+    AlertButtonComponent
   ],
   imports: [
     BrowserModule,
