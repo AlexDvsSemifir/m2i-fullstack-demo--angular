@@ -1,0 +1,13 @@
+<ul>
+  <li *ngFor="let article of articles">{{article.designation}} : {{article.price}}</li>
+</ul>
+
+<h4>Total : {{totalPrice}} € </h4>
+
+<form [formGroup]="article" (ngSubmit)="addArticle()">
+  <label for="designation">Designation</label>
+  <input type="text" formControlName="designation">
+  <label for="price">Prix</label>
+  <input type="number" formControlName="price">
+  <button type="submit">Ajouter</button>
+</form>
