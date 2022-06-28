@@ -13,6 +13,7 @@ import { MagieComponent } from './magie/magie.component';
 import { ListeFiltreeComponent } from './liste-filtree/liste-filtree.component';
 import { ShowDateComponent } from './show-date/show-date.component';
 import { GenericAlertButtonComponent } from './generic-alert-button/generic-alert-button.component';
+import { ButtonMenuComponent } from './button-menu/button-menu.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { GenericAlertButtonComponent } from './generic-alert-button/generic-aler
     MagieComponent,
     ListeFiltreeComponent,
     ShowDateComponent,
-    GenericAlertButtonComponent
+    GenericAlertButtonComponent,
+    ButtonMenuComponent
   ],
   imports: [
     BrowserModule,
