@@ -14,6 +14,8 @@ import { ListeFiltreeComponent } from './liste-filtree/liste-filtree.component';
 import { ShowDateComponent } from './show-date/show-date.component';
 import { GenericAlertButtonComponent } from './generic-alert-button/generic-alert-button.component';
 import { ButtonMenuComponent } from './button-menu/button-menu.component';
+import { HorlogeComponent } from './horloge/horloge.component';
+import { HorlogeMenuComponent } from './horloge-menu/horloge-menu.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ButtonMenuComponent } from './button-menu/button-menu.component';
     ListeFiltreeComponent,
     ShowDateComponent,
     GenericAlertButtonComponent,
-    ButtonMenuComponent
+    ButtonMenuComponent,
+    HorlogeComponent,
+    HorlogeMenuComponent
   ],
   imports: [
     BrowserModule,
