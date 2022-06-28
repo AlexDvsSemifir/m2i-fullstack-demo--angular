@@ -16,6 +16,7 @@ import { GenericAlertButtonComponent } from './generic-alert-button/generic-aler
 import { ButtonMenuComponent } from './button-menu/button-menu.component';
 import { HorlogeComponent } from './horloge/horloge.component';
 import { HorlogeMenuComponent } from './horloge-menu/horloge-menu.component';
+import { ListeCoursesComponent } from './liste-courses/liste-courses.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { HorlogeMenuComponent } from './horloge-menu/horloge-menu.component';
     GenericAlertButtonComponent,
     ButtonMenuComponent,
     HorlogeComponent,
-    HorlogeMenuComponent
+    HorlogeMenuComponent,
+    ListeCoursesComponent
   ],
   imports: [
     BrowserModule,
