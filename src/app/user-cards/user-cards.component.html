@@ -1,0 +1,20 @@
+<div *ngFor="let user of users; let isOdd = odd">
+  <span *ngIf="user.id % 2 === 0">
+  <!-- <span *ngIf="isOdd"> -->
+    <div class="background">
+      <div class="card-header">
+        {{ user.company.name }}
+        <div class="card">
+          <div class="name">
+            {{ user.name }}
+          </div>
+          <div class="info">
+            <p>Site: {{ user.website }}</p>
+            <p>email: {{ user.email }}</p>
+            <p>Téléphone: {{ user.phone }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </span>
+</div>

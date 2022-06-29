@@ -18,6 +18,8 @@ import { HorlogeComponent } from './horloge/horloge.component';
 import { HorlogeMenuComponent } from './horloge-menu/horloge-menu.component';
 import { ListeCoursesComponent } from './liste-courses/liste-courses.component';
 import { ReactiveListeCoursesComponent } from './reactive-liste-courses/reactive-liste-courses.component';
+import { UserCardsComponent } from './user-cards/user-cards.component';
+import { HidderComponent } from './hidder/hidder.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { ReactiveListeCoursesComponent } from './reactive-liste-courses/reactive
     HorlogeComponent,
     HorlogeMenuComponent,
     ListeCoursesComponent,
-    ReactiveListeCoursesComponent
+    ReactiveListeCoursesComponent,
+    UserCardsComponent,
+    HidderComponent
   ],
   imports: [
     BrowserModule,
