@@ -20,6 +20,7 @@ import { ListeCoursesComponent } from './liste-courses/liste-courses.component';
 import { ReactiveListeCoursesComponent } from './reactive-liste-courses/reactive-liste-courses.component';
 import { UserCardsComponent } from './user-cards/user-cards.component';
 import { HidderComponent } from './hidder/hidder.component';
+import { FormbuilderListeCoursesComponent } from './formbuilder-liste-courses/formbuilder-liste-courses.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { HidderComponent } from './hidder/hidder.component';
     ListeCoursesComponent,
     ReactiveListeCoursesComponent,
     UserCardsComponent,
-    HidderComponent
+    HidderComponent,
+    FormbuilderListeCoursesComponent
   ],
   imports: [
     BrowserModule,
