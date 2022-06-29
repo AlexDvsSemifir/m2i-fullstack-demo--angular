@@ -1,0 +1,59 @@
+<span *ngFor="let user of users">
+  <div class="background">
+    <div class="card-header">
+      {{ user.entreprise }}
+      <div class="card">
+        <div class="name">{{ user.nom }} {{ user.prenom }}</div>
+        <div class="info">
+          <p>email: {{ user.email }}</p>
+          <p>Téléphone: {{ user.telephone }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</span>
+
+<h2>Ajouter un utilisateur</h2>
+
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <label for="entreprise">Entreprise :</label>
+  <input type="text" formControlName="entreprise" placeholder="Entreprise" />
+  <span *ngIf="submitted && form['entreprise'].hasError('minlength')"
+    >*Entreprise doit contenir deux caractères</span
+  >
+  <span *ngIf="submitted && !form['entreprise'].value"
+    >* Entreprise obligatoire</span
+  >
+
+  <label for="entreprise">Nom :</label>
+  <input type="text" formControlName="nom" placeholder="Nom" />
+  <span *ngIf="submitted && form['nom'].hasError('minlength')"
+    >*Nom doit contenir deux caractères</span
+  >
+  <span *ngIf="submitted && !form['nom'].value">* Nom obligatoire</span>
+
+  <label for="prenom">Prenom :</label>
+  <input type="text" formControlName="prenom" placeholder="Entreprise" />
+  <span *ngIf="submitted && form['prenom'].hasError('minlength')"
+    >*Prenom doit contenir deux caractères</span
+  >
+  <span *ngIf="submitted && !form['prenom'].value">* Prenom obligatoire</span>
+
+  <label for="email">E-mail :</label>
+  <input type="text" formControlName="email" placeholder="E-mail" />
+  <span *ngIf="submitted && form['email'].hasError('minlength')"
+    >*E-mail doit contenir deux caractères</span
+  >
+  <span *ngIf="submitted && !form['email'].value">* E-mail obligatoire</span>
+
+  <label for="telephone">Telephone :</label>
+  <input type="text" formControlName="telephone" placeholder="Telephone" />
+  <span *ngIf="submitted && form['telephone'].hasError('minlength')"
+    >*Telephone doit contenir 10 caractères</span
+  >
+  <span *ngIf="submitted && !form['telephone'].value"
+    >* Telephone obligatoire</span
+  >
+
+  <button type="submit">Ajouter</button>
+</form>

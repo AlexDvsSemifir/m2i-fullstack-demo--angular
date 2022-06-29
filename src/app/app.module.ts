@@ -21,6 +21,9 @@ import { ReactiveListeCoursesComponent } from './reactive-liste-courses/reactive
 import { UserCardsComponent } from './user-cards/user-cards.component';
 import { HidderComponent } from './hidder/hidder.component';
 import { FormbuilderListeCoursesComponent } from './formbuilder-liste-courses/formbuilder-liste-courses.component';
+import { UserFormComponent } from './user-form/user-form.component';
+import { DataCoursesComponent } from './Output-demo/data-courses/data-courses.component';
+import { FormCoursesComponent } from './Output-demo/form-courses/form-courses.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,10 @@ import { FormbuilderListeCoursesComponent } from './formbuilder-liste-courses/fo
     ReactiveListeCoursesComponent,
     UserCardsComponent,
     HidderComponent,
-    FormbuilderListeCoursesComponent
+    FormbuilderListeCoursesComponent,
+    UserFormComponent,
+    DataCoursesComponent,
+    FormCoursesComponent
   ],
   imports: [
     BrowserModule,
